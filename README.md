@@ -8,7 +8,7 @@ LINK: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-d
 
 ## Visualizing
 
-Before beginning to create a predictive model and analyze the dataset, I first created an interactive Tableau dashboard to visualize its key features. 
+Before beginning to create a predictive model and analyze the dataset, I first created an interactive Tableau dashboard to visualize its key metrics. 
 
 LINK: https://public.tableau.com/app/profile/aj.arbuckle/viz/HRAnalyticsDashboard_16963456456300/Dashboard1
 
