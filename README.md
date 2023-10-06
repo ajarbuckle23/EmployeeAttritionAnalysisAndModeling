@@ -18,7 +18,7 @@ I created a logistic regression model that predicted whether or not an employee 
 
 ## Results 
 
-<u>Performance Metrics:</u>
+<u>Performance Metrics:.</u>
 
 Model Accuracy: 89.34%
 
