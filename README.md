@@ -18,7 +18,7 @@ I created a logistic regression model that predicted whether or not an employee 
 
 ## Results 
 
-Performance Metrics: 
+<u>Performance Metrics:</u>
 
 Model Accuracy: 89.34%
 
@@ -28,11 +28,16 @@ Model Sensitivity: 44.29%
 
 Model Specificity: 97.84%
 
-Statistically Significant Features:
+<u>Statistically Significant Features:</u>
+
 OverTime_No: Coefficient = -0.907 (p = .04)
+
 OverTime_Yes: Coefficient = 0.905 (p = .04)
+
 JobRole_Sales Representative: Coefficient =	0.839 (p < .001)
+
 EducationField_Human Resources:	Coefficient = 0.625 (p < .001)
+
 JobRole_Research Director: Coefficient = -0.531 (p = .02)
 
 ## Interpretation
