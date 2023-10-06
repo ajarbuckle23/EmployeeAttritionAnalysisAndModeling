@@ -19,9 +19,13 @@ I created a logistic regression model that predicted whether or not an employee 
 ## Results 
 
 Performance Metrics: 
+
 Model Accuracy: 89.34%
+
 Model Precision: 79.49%
+
 Model Sensitivity: 44.29%
+
 Model Specificity: 97.84%
 
 Statistically Significant Features:
