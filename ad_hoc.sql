@@ -52,6 +52,18 @@ SELECT * FROM attrition_table;
 # Ad-hoc analysis questions 
 
 
+# What are the differences in performance rating, job satisfaction, and work-life balance for employees who do and do not work overtime? 
+# CONDITION: Round figures to 2 decimal places
+SELECT
+	OverTime,
+	ROUND(AVG(DailyRate), 2) AS 'Average Daily Rate',
+	ROUND(AVG(MonthlyRate), 2) AS 'Average Monthly Rate',
+	ROUND(AVG(MonthlyIncome), 2) AS 'Average Monthly Income',
+	ROUND(AVG(PerformanceRating), 2) AS 'Average Performance Rating', 
+	ROUND(AVG(JobSatisfaction), 2) AS 'Average Job Satisfaction Rating', 
+	ROUND(AVG(WorkLifeBalance), 2) AS 'Average Work-Life Balance Rating'
+FROM attrition_table
+GROUP BY OverTime
 
 # What are the differences in overtime work, performance rating, and job satisfaction for each job role? 
 # CONDITION: Round figures to 2 decimal places
@@ -62,16 +74,6 @@ SELECT
 	ROUND(AVG(JobSatisfaction), 2) AS 'Average Job Satisfaction Rating'
 FROM attrition_table
 GROUP BY JobRole;
-
-# What are the differences in performance rating, job satisfaction, and work-life balance for employees who do and do not work overtime? 
-# CONDITION: Round figures to 2 decimal places
-SELECT
-	OverTime,
-	ROUND(AVG(PerformanceRating), 2) AS 'Average Performance Rating', 
-	ROUND(AVG(JobSatisfaction), 2) AS 'Average Job Satisfaction Rating', 
-	ROUND(AVG(WorkLifeBalance), 2) AS 'Average Work-Life Balance Rating'
-FROM attrition_table
-GROUP BY OverTime
 
 # What are the differences in overtime work, performance rating, and job satisfaction for each education field? 
 # CONDITION: Round figures to 2 decimal places
