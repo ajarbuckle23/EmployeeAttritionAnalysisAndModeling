@@ -8,13 +8,13 @@ LINK: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-d
 
 ## Visualizing
 
-Before beginning to create a predictive model and analyze the dataset, I first created an interactive Tableau dashboard to visualize its key metrics. 
+Before beginning to create a predictive model and analyze the dataset, I first created an interactive Tableau dashboard to visualize its key metrics. This both helped me get a general overview of the workforce, as well as inspect specific segments of it more closely because of its filtering options. 
 
 LINK: https://public.tableau.com/app/profile/aj.arbuckle/viz/HRAnalyticsDashboard_16963456456300/Dashboard1
 
 ## Modeling 
 
-I created a logistic regression model that predicted whether or not an employee would leave the company based on all the information available in the dataset. To prepare the data for modeling, I eliminated irrelevant features (employee ID and columns that had the same value for all employees), one-hot encoded non-ordinal categorical features, assigned numerical values to the ordinal categorical features, and scaled other numerical features. I then trained the model, calculated performance metrics, analyzed feature importance, and determined which feature coefficients were statistically significant. 
+I then created a logistic regression model that predicted whether or not an employee would leave the company based on all the other information available in the dataset. To prepare the data for modeling, I eliminated irrelevant features (employee ID and columns that had the same value for all employees); one-hot encoded non-ordinal categorical features; assigned numerical values to the ordinal categorical features; and scaled other numerical features. I then trained the model, calculated performance metrics, analyzed feature importance, and determined which feature coefficients were statistically significant. 
 
 ## Results 
 
@@ -48,6 +48,6 @@ By far the most influential feature in the model was whether the employee worked
 
 ## Ad-Hoc Analyses
 
-In the attached SQL file, I investigated differences in job satisfaction ratings and performance ratings between employees who do and do not work overtime; who have different job titles; and who have different educational backgrounds. There did not seem to be any obvious differences between the groups, meaning that there may be differences between the groups in data not contained in this dataset. Interestingly, there was also very little difference in work-life balance ratings between employees who do and do not work overtime. This suggests that there may be some other reason that working overtime influences employees to leave the company other than just the number of hours worked. In the same file, I also answered many other questions that an HR Business Partner might pose about this dataset for ad-hoc analyses. 
+In the SQL file, I segmented the dataset by the most influential features in the model to further investigate differences in job satisfaction ratings and performance ratings. I also investigated differences in pay and work-life balance ratings between employees who do or do not work overtime, and interestingly, there was also very little difference between the two groups along these metrics. This suggests that there may be some other reason that working overtime influences employees to leave the company other than just the number of hours worked. In the same file, I also answered many other questions that an HR Business Partner might pose about this dataset for ad-hoc analyses, such as "What is the average number of years in their current role for employees with a Job Involvement rating of 4?", "Which department has the highest percentage of employees who work overtime?", and "How is the amount of busines travel employees do related to their monthly income?"
 
     
